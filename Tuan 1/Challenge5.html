@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 5</title>
+</head>
+<body>
+    <script>
+        function calcAverage(score1, score2 , score3){
+            return (score1+score2+score3)/3
+        }
+        function checkWinner(avgDolphin, avgKoalas){
+            if(avgDolphin>avgKoalas){
+                console.log(`Dolphin win ${avgDolphin} vs ${avgKoalas}`);
+            }else
+            if(avgDolphin<avgKoalas){
+                console.log(`Koalas win ${avgKoalas} vs ${avgDolphin}`);
+            }else{
+                console.log(`No team winner`);
+            }
+        }
+        //data 1
+        const Dolphins=[44,23,71]
+        const Koalas = [65,54,49]
+        // tinh avg cho test 1
+        avgDolphins1 = calcAverage(Dolphins[0],Dolphins[1], Dolphins[2])
+        avgKoalas1 = calcAverage(Koalas[0], Koalas[1], Koalas[2])
+        console.log('Avg cua Dolphins Data 1 la :',avgDolphins1);
+        console.log('Avg Koalas Data 1 la :', avgKoalas1)
+        checkWinner(avgDolphins1, avgKoalas1)
+
+        //data 2
+        const Dolphins1 = [85, 54,41]
+        const Koalas1= [23,34,27]
+        // tinh avg cho test 1
+        avgDolphins2 = calcAverage(Dolphins1[0], Dolphins1[1], Dolphins1[2])
+        avgKoalas2 = calcAverage(Koalas1[0], Koalas1[1], Koalas1[2])
+        console.log('Avg cua Dolphins Data 2 la:', avgDolphins2);
+        console.log('Avg Koalas Data 2 la :', avgKoalas2)
+        checkWinner(avgDolphins2, avgKoalas2)
+        
+    </script>
+</body>
+</html>

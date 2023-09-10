@@ -20,9 +20,9 @@
         return scores.reduce((total, score) => total + score, 0) / scores.length;
         }
 
-        function check(dolphinsScores, koalasScores, minScoreRequired) {
-        let averageDolphins = calculateAverageScore(dolphinsScores);
-        let averageKoalas = calculateAverageScore(koalasScores);
+        function checkWinner(dolphinsScores, koalasScores, minScoreRequired) {
+        let averageDolphins = AverageScore(dolphinsScores);
+        let averageKoalas = AverageScore(koalasScores);
 
         if (averageDolphins >= minScoreRequired && averageDolphins > averageKoalas) {
             console.log("Dolphins win!");

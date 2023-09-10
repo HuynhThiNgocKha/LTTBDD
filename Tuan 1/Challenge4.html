@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 4</title>
+</head>
+<body>
+    <script>
+        let billValues = [275, 40, 430];
+        function tip(billValues) {
+              return billValues >= 50 && billValues <= 300 ? billValues * 0.15 : billValues * 0.2;
+        }
+        const tips = [tip(billValues[0]), tip(billValues[1]), tip(billValues[2])]
+        const total = [tips[0]+ billValues[0], tips[1] + billValues[1], tips[2] + billValues[2]]
+
+        console.log(`The bill was ${billValues}, the tip was ${tips}, and the total value ${total}`);
+
+    </script>
+</body>
+</html>
